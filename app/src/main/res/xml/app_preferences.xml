@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:defaultValue="true"
+                  android:enabled="true">
+
+    <PreferenceCategory android:title="@string/settings_general">
+        <ListPreference
+                android:defaultValue="@string/slow_animation"
+                android:dialogTitle="@string/text_select"
+                android:entries="@array/animation_options"
+                android:entryValues="@array/animation_options"
+                android:key="@string/animation_key"
+                android:summary="@string/text_summary"
+                android:title="@string/text_animation"/>
+        <ListPreference
+                android:defaultValue="@string/spacing_small"
+                android:dialogTitle="@string/text_select"
+                android:entries="@array/grid_spacing"
+                android:entryValues="@array/grid_spacing"
+                android:key="@string/spacing_key"
+                android:summary="@string/spacing_summary"
+                android:title="@string/text_spacing"/>
+    </PreferenceCategory>
+    <ListPreference
+            android:defaultValue="@string/grid_size_default"
+            android:dialogTitle="@string/text_select"
+            android:entries="@array/grid_size"
+            android:entryValues="@array/grid_size"
+            android:key="@string/grid_key"
+            android:summary="@string/text_summary_grid"
+            android:title="@string/text_grid"/>
+</PreferenceScreen>
+
